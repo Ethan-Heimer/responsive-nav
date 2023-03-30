@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .Grid{
+            display: grid;
+            grid-template: repeat(24,10vh) / repeat(5,1fr);
+            width: 100%;
+            height: 100vh;
+            gap: 4px;
+        }
+
+        .Grid-Item{
+            width: 100%;
+            height: 100%;
+            grid-row: var(--RowStart) / var(--RowEnd);
+            grid-column: var(--ColumnStart) / var(--ColumnEnd);
+        }
+    </style>
+</head>
+<body>
+    <div class="Grid">
+        <img src="ce_logo.png" class="Grid-Item" style="--RowStart: 1; --RowEnd:5; --ColumnStart:1; --ColumnEnd:5;">
+        <img src="ce_image01.png" class="Grid-Item" style="--RowStart:1; --RowEnd:2; --ColumnStart:5; --ColumnEnd:6;">
+        <img src="ce_image02.png" class="Grid-Item" style="--RowStart:2; --RowEnd:3; --ColumnStart:5; --ColumnEnd:6;">
+        <img src="ce_image03.png" class="Grid-Item" style="--RowStart:3; --RowEnd:5; --ColumnStart:5; --ColumnEnd:6;">
+        <img src="ce_image04.png" class="Grid-Item" style="--RowStart:5; --RowEnd:10; --ColumnStart:1; --ColumnEnd:3;">
+        <img src="ce_image05.png" class="Grid-Item" style="--RowStart:5; --RowEnd:10; --ColumnStart:3; --ColumnEnd:4;">
+        <img src="ce_image06.png" class="Grid-Item" style="--RowStart:5; --RowEnd:10; --ColumnStart:4; --ColumnEnd:5;">
+        <img src="ce_image07.png" class="Grid-Item" style="--RowStart:5; --RowEnd:10; --ColumnStart:5; --ColumnEnd:6;">
+        <img src="ce_image08.png" class="Grid-Item" style="--RowStart:10; --RowEnd:16; --ColumnStart:1; --ColumnEnd:2;">
+        <img src="ce_image09.png" class="Grid-Item" style="--RowStart:10; --RowEnd:14; --ColumnStart:2; --ColumnEnd:4;">
+        <img src="ce_image10.png" class="Grid-Item" style="--RowStart:10; --RowEnd:14; --ColumnStart:4; --ColumnEnd:5;">
+        <img src="ce_image11.png" class="Grid-Item" style="--RowStart:10; --RowEnd:14; --ColumnStart:5; --ColumnEnd:6;">
+        <img src="ce_image12.png" class="Grid-Item" style="--RowStart:16; --RowEnd:18; --ColumnStart:1; --ColumnEnd:2;">
+        <img src="ce_image13.png" class="Grid-Item" style="--RowStart:14; --RowEnd:18; --ColumnStart:2; --ColumnEnd:3;">
+        <img src="ce_image14.png" class="Grid-Item" style="--RowStart:14; --RowEnd:16; --ColumnStart:3; --ColumnEnd:5;">
+        <img src="ce_image15.png" class="Grid-Item" style="--RowStart:14; --RowEnd:16; --ColumnStart:5; --ColumnEnd:6;">
+        <img src="ce_image16.png" class="Grid-Item" style="--RowStart:16; --RowEnd:18; --ColumnStart:3; --ColumnEnd:3;">
+        <img src="ce_image17.png" class="Grid-Item" style="--RowStart:16; --RowEnd:18; --ColumnStart:4; --ColumnEnd:5;">
+        <img src="ce_image18.png" class="Grid-Item" style="--RowStart:16; --RowEnd:18; --ColumnStart:5; --ColumnEnd:6;">
+        <img src="ce_image19.png" class="Grid-Item" style="--RowStart:18; --RowEnd:20; --ColumnStart:1; --ColumnEnd:2;">
+        <img src="ce_image20.png" class="Grid-Item" style="--RowStart:18; --RowEnd:20; --ColumnStart:2; --ColumnEnd:4;">
+    </div>
+</body>
+</html>
